@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: osio-register
+server:
+  port: 7001
+management:
+  server:
+    port: 8001
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    jmx: 
+      exposure: 
+        include: "*"
+    web: 
+      exposure: 
+        include: "*"
